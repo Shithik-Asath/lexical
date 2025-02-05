@@ -107,16 +107,16 @@ break;
  for(i=0;i<v;i++)
  if(strcmp(var[i],var[j])==0)
  var[j][o]=' ';
- fprintf(fp,"IDENTIFIERS");
+ fprintf(fp,"IDENTIFIERS:\n");
  for(j=0;j<v;j++)
  {
  fprintf(fp,"%s\n",var[j]);
   t++;
  }
- fprintf(fp,"KEYWORDS");
+ fprintf(fp,"KEYWORDS:\n");
  for(j=0;j<n;j++)
   fprintf(fp,"%s\n",nkey[j]);
- fprintf(fp,"CONSTANTS");
+ fprintf(fp,"CONSTANTS:\n");
  for(j=0;j<c;j++)
  fprintf(fp,"%s\n",con[j]);
  getch();
